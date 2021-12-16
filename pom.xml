@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>avro-examples</module>
-        <module>kafka-avro-v1</module>
+        <module>kafka-avro-without-registration-topic</module>
         <module>kafka-avro-v2</module>
     </modules>
 

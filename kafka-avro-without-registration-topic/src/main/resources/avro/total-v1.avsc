@@ -1,0 +1,14 @@
+{
+  "type" : "record",
+  "name" : "ReportTotalAmounts",
+  "namespace" : "ru.tinkoff.prm.model.uprm",
+  "fields" : [ {
+    "name" : "totalAmountWithVat",
+    "type" : "float",
+    "doc" : "Общая стоимость Услуг за Отчётный период"
+  }, {
+    "name" : "totalAmountVat",
+    "type" : "float",
+    "doc" : "Сумма НДС"
+  } ]
+}

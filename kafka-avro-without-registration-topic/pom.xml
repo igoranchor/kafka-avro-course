@@ -13,7 +13,7 @@
 
     <properties>
         <avro.version>1.8.2</avro.version>
-        <kafka.version>0.11.0.1</kafka.version>
+        <kafka.version>2.7.1</kafka.version>
         <confluent.version>3.3.1</confluent.version>
     </properties>
 
@@ -21,10 +21,20 @@
     <repositories>
         <repository>
             <id>confluent</id>
-            <url>http://packages.confluent.io/maven/</url>
+            <url>https://nexus.tcsbank.ru/repository/mvn-confluent-proxy/</url>
         </repository>
     </repositories>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://nexus.tcsbank.ru/repository/mvn-maven-proxy</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>confluent</id>
+            <url>http://nexus-new.tcsbank.ru/repository/mvn-confluent-proxy/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <!--Only dependency needed for the avro part-->
@@ -58,8 +68,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>9</source>
+                    <target>9</target>
                 </configuration>
             </plugin>
 
